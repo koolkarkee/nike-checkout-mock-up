@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 73px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 50px;
+    position: sticky;
+    top:2px;
+}
+
+nav img{
+    width: 61px;
+    height: 28px;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 16px;
+    padding: 25px;
+    line-height: 30px;
+}
+
+/* nav bar underline effect start */
+nav ul li a:hover{
+  border-bottom: 2px solid black;
+  padding-bottom: 0;
+  transition: .8s;
+}
+
+/* nav bar for mobile version use */
+label #btn{
+  position: absolute;
+  right: 30px;
+  color: black;
+  font-size: 30px;
+  line-height: 4px;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+/* nav bar bottom creation end for rest of the setting media quires
+impicated*/
+
+
+/* search section stated */
+input {
+	outline: none;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	/* -webkit-box-sizing: content-box; */
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: none;
+	padding: 9px 10px 9px 32px;
+	width: 150px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 350px;
+	background-color: #fff;
+	border-color: #66CC75;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+
+input::-webkit-input-placeholder {
+	color: #999;
+}
+/* serch input & serch effect end here */
+
+
+/* product section starts */
+.container{
+  max-width: 1080px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .full-details{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 100vh;
+}
+
+.container .product-detail  h1{
+  font-size: 18px;
+}
+
+.container .product-detail-container{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin-top: 40px;
+}
+
+.product-detail-container img{
+  max-width: 196px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.container .product-details{
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 500px;
+  margin-top: 51px;
+}
+
+.product-catagory h1{
+  font-size: 24px;
+}
+
+.product-qty-detail{
+  font-size: 18px;
+  line-height: 30px;
+  color: #999;
+}
+
+.product-qty-detail h2{
+  color:black;
+  font-size: 16px;
+}
+
+.product-price{
+  display: flex;
+}
+
+.product-price h2{
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.product-price h2 s{
+  color: #999;
+  margin-right: 4px;
+}
+
+/* .product-qty-detail p{
+  text-transform: lowercase;
+} */
+
+.dropdown-content select{
+  margin: 0 10px;
+  font-size: 14px;
+  color: #999;
+  border: 0;
+  border-radius: 0;
+  /* appearance: none;
+  background-image: url(./../img/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  height: 10px;
+  line-height: 1px; */
+}
+.dropdown-content select option{
+  outline: none;
+  background:none;
+}
+ 
+.product-action{
+  margin: 30px 0 20px 0;
+}
+.product-action a{
+    margin-right: 15px;
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+ }
+
+ .product-action a:hover{
+  color: rgb(173, 172, 172);
+  border-bottom: 1px solid rgb(173, 172, 172);
+}
+/* product section ends */
+
+
+
+
+/* summary section css starts */
+.product-summary {
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.product-summary h2{
+  font-size: 18px;
+}
+
+.product-summary-details-list{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-bottom: 20px;
+}
+.product-summary-total-price{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 10px 0;
+}
+
+.checkout-button{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.checkout-button input{
+  width: 100%;
+  height: 64px;
+  padding: 5px;
+  background: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.checkout-button input:hover{
+  background: rgb(51, 50, 50);
+}
+
+.checkout-button .paypalImgBox{
+  width: 100%;
+  height: 64px;
+  padding: 5px;
+  background: #e5e5e5;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.checkout-button .paypalImgBox img{
+  max-width: 20%;
+} 
+
+.checkout-button .paypalImgBox:hover{
+  background:white;
+  border: 1px solid gray;
+}
+/* summery section css ends */
+
+
+/* guest checkout popup css begin */ 
+.popup-container{
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  background: white;
+  border-radius: 3px;
+  }
+
+.sign-in-form{
+  max-width: 500px;
+  height: auto;
+  padding: 10px 30px;
+  }
+
+  .img-nikelogo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+
+  .img-nikelogo img{
+      max-width: 79px;
+      width: 79px;
+  }
+  
+  .sign-in-form h2{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 30px;
+  }
+
+  .sign-in-email input{
+      width: 100%;
+      height: 36px;
+      padding: 5px;
+      margin-bottom: 15px;
+  }
+
+  .sign-in-password input{
+      width: 100%;
+      height: 36px;
+      padding: 5px;
+      margin-bottom: 30px;
+  }
+
+  .signin-forgotten{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+  }
+
+  .signin-forgotten label{
+      margin-left: -25px;
+      color: gray;
+  }
+
+  .signin-forgotten p a{
+      color: gray;
+      text-decoration: none;
+  }
+
+  .signin-policy, .signin-policy a{
+      text-align: center;
+      color: gray;
+      margin-bottom: 30px;
+  }
+
+  .signin-button {
+      background: black;
+      width: 100%;
+      height: 36px;
+      color: white;
+      font-size: 14px;
+      margin-bottom: 20px;
+  }
+
+  .join-us {
+      text-align: center;
+      color: gray;
+      margin-bottom: 30px;
+  }
+
+  .join-us a{
+      color: black;
+  }
+/* guest checkout popup css end */
+
+
+/* sign in pop up form css starts */
+.modal{
+  display: none;  
+  position: fixed;  
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);  
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px; 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+/* The Close Button (x) */
+.close {
+  position: relative;
+  right: -190px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: gray; 
+  cursor: pointer; 
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* sign in pop up form css ends */

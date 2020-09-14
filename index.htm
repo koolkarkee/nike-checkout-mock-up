@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head>
+    <meta name="Nike" content="Shop at Nike" />
+    <meta charset="utf-8">
+    <title>Nike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+  </head>
+
+  <body>
+      <nav>
+          <li class="imgBx">
+            <img src="./img/nike.png">
+          </li>
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+          </label>
+          <ul>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Customize</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+
+          <form>
+            <input type="search" placeholder="Search">
+          </form>
+      </nav>
+
+      <div class="container">
+          <!-- main div starts -->
+          <div class="full-details">
+
+            <div class="product-detail">
+                <h1> Bag </h1>
+
+                <!-- imge deatil price -->
+                <div class="product-detail-container">
+                 
+                  <!-- image div -->
+                  <div class="item">
+                    <img src="./img/shoes.jpg" /> 
+                  </div>
+
+                  <!-- details div -->
+                  <div class="product-qty-detail">
+                      <h2><strong>Nike Blazer Low Pop</strong></h2>
+                      <p>Older Kids' Shoe <br>White/Volt</p>
+
+                      <div class="dropdown"> 
+
+                        <div class="dropdown-content">
+                          <label>Size</label>
+                          <select name="size1"> 
+                            <option value="5.6">5.6Y</option>
+                            <option value="11.2">11.2Y</option>
+                            <option value="40.2">40.2Y</option>
+                          </select>  
+
+                          <label>Quantity</label>
+                          <select name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option> 
+                          </select>  
+                        </div>
+
+                        <div class="product-action">
+                          <a href="#">Move to Favourites</a>                          
+                          <a href="#">Remove</a>
+                        </div> 
+                        
+                      </div>                   
+                  </div> 
+
+                  <!-- price div -->
+                  <div class="product-price">
+                    <h2></h2><s>$170.00 </s>
+                    <h2>$105.00</h2>
+                  </div>
+                </div>
+                <hr>
+                <div class="product-detail-container">
+                 
+                  <!-- image div -->
+                  <div class="item">
+                    <img src="./img/Tshirt.png" /> 
+                  </div>
+
+                  <!-- details div2 -->
+                  <div class="product-qty-detail">
+                      <h2><strong>F.C.Barcelona 2020/21 Stadium Third</strong></h2>
+                      <p>Older Kids' Shoe <br>White/Volt</p>
+
+                      <div class="dropdown"> 
+
+                        <div class="dropdown-content">
+                          <label>Size</label>
+                          <select name="size2"> 
+                            <option value="5.6">5.6Y</option>
+                            <option value="11.2">11.2Y</option> 
+                          </select>  
+
+                          <label>Quantity</label>
+                          <select name="quantity2">
+                            <option value="1">1</option>
+                            <option value="2">2</option> 
+                          </select>  
+                        </div>
+
+                        <div class="product-action">
+                          <a href="#">Move to Favourites</a>                          
+                          <a href="#">Remove</a>
+                        </div> 
+                        
+                      </div>                   
+                  </div> 
+
+                  <!-- price div -->
+                  <div class="product-price">
+                    <h2></h2><s>$170.00 </s>
+                    <h2>$105.00</h2>
+                  </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="product-summary">
+              <h2>Summary</h2>
+
+              <!-- product summary starts -->
+              <div class="product-summary-details">
+                
+                <!-- product summary details list starts -->
+                <div class="product-summary-details-list">
+                  <p>Subtotal </p>
+                  <p>$303.99</p>
+                  <p>Estimated Delivery & Handling</p>
+                  <p>$0.00</p>
+                  <p>Taxes</p>
+                  <p>-</p> 
+                </div>
+                <hr>
+
+                <!-- product summary price list start -->
+                <div class="product-summary-total-price">
+                  <p>Total</p>
+                  <p>$303.99</p>
+                </div>
+                <hr>
+
+              </div> 
+              <!-- product summary ends -->
+
+              <!-- product checkout section starts -->
+              <div class="checkout-button">
+                <input type="button" name="guest" value="Guest Checkout" />
+                <input type="button" name="member" value="Member Checkout" 
+                       onclick="document.getElementById('signinpopupmodal').style.display='flex'"
+                       class="cancelbtn"
+                />
+                <a class="paypalImgBox" href="#">
+                  <img src="./img/paypal-logo.png"/>
+                </a>
+              </div>
+              <!-- product checkout section end -->
+            </div>
+         </div>
+      </div>
+
+      <!-- member signin popup window start-->  
+      <div class="modal" id="signinpopupmodal">          
+        <div class="popup-container"> 
+
+          <span onclick="document.getElementById('signinpopupmodal').style.display='none'" 
+                  class="close" title="Close Modal">&times;</span>
+
+          <div  class="sign-in-form"> 
+            <div class="img-nikelogo">
+              <img src="./img/nike.png" /> 
+            </div>
+            
+            <h2> Your account for <br> everything nike </h2>
+            
+            <form action="#">
+              <div class="sign-in-email">
+                <input type="email" name="email" placeholder="Email address" >
+              </div>
+              
+              <div class="sign-in-password">
+                <input type="password" name="password" placeholder="Password" >
+              </div>
+              
+              <div class="signin-forgotten">
+  
+                <input class="filterCheckbx" id="forgotten" type="checkbox" >
+                <label for="forgotten">Keep me signed in</label>
+                
+                <p><a href="#">Forgotten your password?</a> </p>
+              </div>
+              
+              <div class="signin-policy">
+                <p> By logging in, you agree to Nike's <a href="#">Privacy Policy</a> and <br> <a href="#">Terms of Use.</a></p>
+              </div>
+              
+              <button class="signin-button"><strong>SIGN IN</strong></button>
+            </form>
+            
+            <div class="join-us">
+            <p> Not a member? <a href="">Join Us</a></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- member signin popup window end-->  
+     
+      <script>
+        var modal = document.getElementById('signinpopupmodal')
+
+        window.onclick = function(event){
+          if(event.target == modal){ 
+            modal.style.display = "none"             
+          }
+        }
+      </script>
+  </body>
+</html>
